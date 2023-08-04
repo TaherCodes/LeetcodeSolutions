@@ -9,8 +9,15 @@ Explanation: The company wants each employee to work for at least 2 hours.
 - Employee 4 worked for 4 hours and met the target.
 There are 3 employees who met the target.
 
-Markup :  # Heading 1 #
-
--OR-
-
-Markup :  ============= (below H1 text)
+######################################### MY Solution ##################################################
+class Solution {
+    public int numberOfEmployeesWhoMetTarget(int[] hours, int target) {
+        int count = 0;
+        for(int i = 0; i <=hours.length - 1; i++){
+            if (hours[i] >= target){
+                count++;
+            }
+        }
+        return count;
+    }
+}
